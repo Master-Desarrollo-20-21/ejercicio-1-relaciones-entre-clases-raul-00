@@ -1,5 +1,13 @@
-# Propuesta 1 
+# Realizado en grupo
+👉 [Aquí el resultado (Grupo "Los primeros")](https://github.com/Master-Desarrollo-20-21/ejercicio-1-relaciones-entre-clases-jumpering)
+
+# Otras propuestas propias
+## Propuesta 1 
 ![Alt text](mastermind-public-view-p1.png?raw=true "Proposal 1")
+
+
+
+
 
 # Ejercicio 1 de Diseño Orientado a Objetos
 
