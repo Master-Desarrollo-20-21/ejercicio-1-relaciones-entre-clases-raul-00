@@ -1,0 +1,71 @@
+@startuml
+
+title Mastermind - Public View
+
+Mastermind *--> Game
+Mastermind ..-> Console
+
+Game *--> SecretCombination
+Game *--> "1..10" ProposedCombination
+Game ..-> Console
+
+Combination *--> "4" Color
+Combination  <|-- SecretCombination
+Combination <|-- ProposedCombination
+
+ProposedCombination ..> Color
+ProposedCombination ..-> Console
+
+SecretCombination ..-> Console
+
+class Mastermind{
+    -isResumed()
+    +play()
+    {static} main()
+}
+
+class Game{
+    -ATTEMPTS: 10
+    -showAttempts()
+    -isFinished()
+    +play()
+}
+
+class Combination{
+    #Color[]
+}
+
+class ProposedCombination{
+    -isValidLength(String)
+    -isValidColors(String)
+    -showValidColors()
+    +read(String title)
+    +toString()
+}
+
+class SecretCombination{
+    +showHidden()
+    +getBlacks(ProposedCombination)
+    +getWhites(ProposedCombination)
+}
+
+class Console{
+    +outln()
+    +inString()
+}
+
+enum Color{
+    RED('r')
+    BLUE('b')
+    YELLOW('y')
+    GREEN('g')
+    ORANGE('o')
+    PURPLE('p')
+    
+    +toString()
+    +valueOf(char)
+    +isValid(char)
+}
+
+
+@enduml

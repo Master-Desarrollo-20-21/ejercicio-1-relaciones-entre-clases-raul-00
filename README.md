@@ -1,3 +1,6 @@
+# Propuesta 1 
+![Alt text](mastermind-public-view-p1.png?raw=true "Proposal 1")
+
 # Ejercicio 1 de Diseño Orientado a Objetos
 
 Repasar y recomponer el diagrama de clases del Juego de Mastermind en base a las explicaciones de la clase 2 del curso de Diseño Orientado a Objetos relativas a las relaciones entre clases.
