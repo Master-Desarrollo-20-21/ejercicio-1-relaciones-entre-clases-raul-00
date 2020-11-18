@@ -6,7 +6,7 @@ Mastermind *--> Game
 Mastermind ..-> Console
 
 Game *--> SecretCombination
-Game *--> "1..10" ProposedCombination
+Game o--> "1..10" ProposedCombination
 Game ..-> Console
 
 Combination *--> "4" Color
